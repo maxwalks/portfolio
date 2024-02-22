@@ -103,6 +103,24 @@ html {
     font-size: 20px;
 }
 
+.instagram-logo {
+    color: #bc2a8d;
+    filter: drop-shadow(#bc2a8d 1px 0 7px);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 11px;
+    width: 3em;
+    transition: font-size 0.3s;
+}
+
+.instagram-logo:hover {
+    font-size: 20px;
+}
+
 body {
   margin-top: 13.5rem;
   color: #999;
