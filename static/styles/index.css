@@ -1,0 +1,111 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+    text-align: center;
+}
+
+html {
+    overflow: hidden;
+}
+
+.top .banner {
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(150deg, rgb(100,132,211), rgb(255,240,159));
+    height: 100px;
+    width: 100%;
+}
+
+.top .logo {
+    position: relative;
+    height: 80px;
+    border-radius: 150px;
+    top: -210px;
+}
+
+.top .name {
+    position: relative;
+    top: -80px;
+    font-weight: 600;
+    color: #fafafa;
+    filter: drop-shadow(#fafafa 1px 0 7px);
+}
+
+.banners {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 11px;
+    width: 100%;
+    position: absolute;
+}
+
+.github-logo {
+    color: #fafafa;
+    filter: drop-shadow(#fafafa 1px 0 7px);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 11px;
+    width: 3em;
+    transition: font-size 0.3s;
+}
+
+.github-logo:hover {
+    font-size: 20px;
+}
+
+.tiktok-logo {
+    color: #fafafa;
+    filter: drop-shadow(#fafafa 1px 0 7px);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 11px;
+    width: 2.5em;
+    transition: font-size 0.3s;
+}
+
+.tiktok-logo:hover {
+    font-size: 20px;
+}
+
+.discord-logo {
+    color: #5865f2;
+    filter: drop-shadow(#5865f2 1px 0 7px);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 11px;
+    width: 3em;
+    transition: font-size 0.3s;
+}
+
+.discord-logo:hover {
+    font-size: 20px;
+}
+
+body {
+  margin-top: 13.5rem;
+  color: #999;
+  text-align: center;
+  background-image: url("../assets/bg.png");
+}
