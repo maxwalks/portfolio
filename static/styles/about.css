@@ -25,68 +25,6 @@ html {
     filter: drop-shadow(#fafafa 1px 0 7px);
 }
 
-.banners {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-    row-gap: 11px;
-    width: 100%;
-    position: absolute;
-}
-
-.github-logo, .tiktok-logo {
-    color: #fafafa;
-    filter: drop-shadow(#fafafa 1px 0 7px);
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    justify-content: center;
-    margin-top: 30px;
-    row-gap: 11px;
-    width: 3em;
-    transition: font-size 0.3s;
-}
-
-.tiktok-logo:hover, .discord-logo:hover, .github-logo:hover {
-    font-size: 20px;
-}
-
-.discord-logo {
-    color: #5865f2;
-    filter: drop-shadow(#5865f2 1px 0 7px);
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    justify-content: center;
-    margin-top: 30px;
-    row-gap: 11px;
-    width: 3em;
-    transition: font-size 0.3s;
-}
-
-.instagram-logo {
-    color: #bc2a8d;
-    filter: drop-shadow(#c03193 1px 0 7px);
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    justify-content: center;
-    margin-top: 30px;
-    row-gap: 11px;
-    width: 3em;
-    transition: font-size 0.3s;
-}
-
-.instagram-logo:hover {
-    font-size: 20px;
-}
-
 body {
   margin-top: 13.5rem;
   color: #999;
@@ -139,4 +77,46 @@ body {
 
 .about-button:hover, .home-button:hover {
     font-size: 17px;
+}
+
+.glow-text {
+    display: block;
+    text-decoration: none;
+    font-weight: 850;
+    color: #fafafa;
+    filter: drop-shadow(#fafafa 1px 0 7px);
+    margin-top: -15px;
+    padding-bottom: 60px;
+    margin-right: 17px;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    gap: 20px;
+}
+
+.html-logo {
+    height: 3.5em;
+    color: #EA4122;
+    filter: drop-shadow(#EA4122 1px 0 7px);
+    transition: font-size 0.3s;
+}
+
+.python-logo {
+    height: 4em;
+    color: #FFD457;
+    filter: drop-shadow(#FFD457 1px 0 7px);
+    transition: font-size 0.3s;
+}
+
+.css-logo {
+    height: 4.5em;
+    color: #0277BD;
+    filter: drop-shadow(#0277BD 1px 0 7px);
+    transition: font-size 0.3s;
 }
