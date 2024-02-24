@@ -15,6 +15,8 @@ html {
     height: 80px;
     border-radius: 150px;
     top: -210px;
+    color: #414851;
+    filter: drop-shadow(#414851 1px 0 7px);
 }
 
 .name {
@@ -42,7 +44,7 @@ body {
 
 
 .home-button {
-    font-weight: 850;
+    font-weight: 600;
     text-decoration: none;
     position: absolute;
     color: #fafafa;
@@ -59,7 +61,7 @@ body {
 }
 
 .about-button {
-    font-weight: 850;
+    font-weight: 600;
     text-decoration: none;
     position: absolute;
     color: #fafafa;
@@ -119,4 +121,27 @@ body {
     color: #0277BD;
     filter: drop-shadow(#0277BD 1px 0 7px);
     transition: font-size 0.3s;
+}
+
+.hire-button {
+    margin-top: 120px;
+    border-color: #fafafa;
+    background: transparent;
+    font-family: 'Satoshi', sans-serif;
+    color: #fafafa;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+    border: 2px solid #fafafa;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fafafa;
+    filter: drop-shadow(#fafafa 1px 0 7px);
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+.hire-button:hover {
+    cursor: pointer;
+    background-color: #fafafa;
+    color: #414851;
 }
