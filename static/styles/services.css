@@ -208,7 +208,27 @@ body {
     backdrop-filter: blur(10px);
     filter: drop-shadow(black 1px 0 7px);
     margin-top: 2.5em;
+    opacity: 0;
+    transform: translateY(-20px);
+    border-radius: 10px;
 }
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-content.show {
+    display: block;
+    animation: fadeInDown 0.3s ease forwards;
+}
+
   
 .dropdown-content a {
     color: black;
