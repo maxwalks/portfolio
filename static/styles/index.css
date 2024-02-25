@@ -184,7 +184,7 @@ body {
     right: 0;
     margin-right: 15px;
     backdrop-filter: blur(10px);
-    filter: drop-shadow(black 1px 0 7px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin-top: 2.5em;
     opacity: 0;
     transform: translateY(-20px);
