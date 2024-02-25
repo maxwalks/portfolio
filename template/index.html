@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles/index.css">
+    <script src="../static/styles/index.js"></script> 
     <title>@maxwalks</title>
 </head>
 <body>
     <div class="taskbar">
-        <a href="/about">
-            <h3 class="about-button">About me</h3>
-        </a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">&#9776; Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="/" class="btn">Home</a>
+              <a href="/about" class="btn">About Me</a>
+              <a href="/services" class="btn2">Services</a>
+            </div>
+        </div>
     </div>
     <div class="top">
         <h1 class="name">MAXWALKS</h1>
