@@ -218,6 +218,7 @@ body {
     color: #fafafa;
     filter: drop-shadow(#fafafa 1px 0 7px);
     font-weight: 600;
+    transition: font-size 0.3s;
 }
   
 .dropdown-content a:hover {
