@@ -7,7 +7,7 @@
 }
 
 html {
-    overflow: auto;
+    overflow: hidden;
 }
 
 .logo {
@@ -27,22 +27,73 @@ html {
     filter: drop-shadow(#fafafa 1px 0 7px);
 }
 
-.row {
-    display: block;
+.banners {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     margin-top: 30px;
     row-gap: 11px;
     width: 100%;
     position: absolute;
-    justify-content: center;
+}
+
+.github-logo, .tiktok-logo {
+    color: #fafafa;
+    filter: drop-shadow(#fafafa 1px 0 7px);
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 11px;
+    width: 3em;
+    transition: font-size 0.3s;
+}
+
+.tiktok-logo:hover, .discord-logo:hover, .github-logo:hover {
+    font-size: 20px;
+}
+
+.discord-logo {
+    color: #5865f2;
+    filter: drop-shadow(#5865f2 1px 0 7px);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 11px;
+    width: 3em;
+    transition: font-size 0.3s;
+}
+
+.instagram-logo {
+    color: #bc2a8d;
+    filter: drop-shadow(#c03193 1px 0 7px);
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 30px;
+    row-gap: 11px;
+    width: 3em;
+    transition: font-size 0.3s;
+}
+
+.instagram-logo:hover {
+    font-size: 20px;
 }
 
 body {
   margin-top: 13.5rem;
   color: #999;
   text-align: center;
-  background-image: url("../assets/bg.png");
+  background-image: url("assets/bg.png");
 }
 
 .taskbar {
@@ -70,10 +121,10 @@ body {
     padding: 1%;
 }
 
-.home-button {
+.services-button {
+    position: absolute;
     font-weight: 600;
     text-decoration: none;
-    position: absolute;
     color: #fafafa;
     filter: drop-shadow(#fafafa 1px 0 7px);
     align-items: center;
@@ -83,87 +134,14 @@ body {
     justify-content: center;
     row-gap: 11px;
     transition: font-size 0.3s;
-    left: 0;
+    right: 0;
     padding: 1%;
 }
 
-
-.about-button:hover, .home-button:hover {
+.about-button:hover, .home-button:hover, .services-button:hover {
     font-size: 17px;
 }
 
-.block {
-    display: inline-block;
-    width: 20em;
-    height: 18em;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.text-header {
-    margin-top: 10px;
-    font-weight: 700;
-    color: #fafafa;
-    filter: drop-shadow(#fafafa 1px 0 7px);
-}
-
-.unordered-list {
-    display: inline-block;
-    left: 0;
-    color: #fafafa;
-    filter: drop-shadow(#fafafa 1px 0 7px);
-    margin-right: 11em;
-    margin-top: 2em;
-    justify-content: left;
-    text-align: left;
-    list-style-position: inside;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.unordered-list2 {
-    display: inline-block;
-    left: 0;
-    color: #fafafa;
-    filter: drop-shadow(#fafafa 1px 0 7px);
-    margin-right: 6em;
-    margin-top: 2em;
-    justify-content: left;
-    text-align: left;
-    list-style-position: inside;
-}
-
-.hire-button, .hire-button2 {
-    border-color: #fafafa;
-    background: transparent;
-    font-family: 'Satoshi', sans-serif;
-    color: #fafafa;
-    padding: 5px 10px 5px 10px;
-    outline: none;
-    border: 2px solid #fafafa;
-    border-radius: 10px;
-    font-weight: 600;
-    color: #fafafa;
-    filter: drop-shadow(#fafafa 1px 0 7px);
-    transition: background-color 0.5s;
-    transition: color 0.5s;
-    margin-top: 5em;
-}
-
-.hire-button2 {
-    margin-top: 5.3em;
-}
-
-.hire-button:hover, .hire-button2:hover {
-    cursor: pointer;
-    background-color: #fafafa;
-    color: #414851;
-}
 
 .dropbtn {
     position: fixed;
@@ -228,7 +206,6 @@ body {
     display: block;
     animation: fadeInDown 0.3s ease forwards;
 }
-
   
 .dropdown-content a {
     color: black;
