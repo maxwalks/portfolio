@@ -123,6 +123,14 @@ body {
     transition: font-size 0.3s;
 }
 
+.javascript-logo {
+    margin-left: -25px;
+    height: 3.9em;
+    color: #e9ca32;
+    filter: drop-shadow(#e9ca32 1px 0 7px);
+    transition: font-size 0.3s;
+}
+
 .hire-button {
     margin-top: 120px;
     border-color: #fafafa;
